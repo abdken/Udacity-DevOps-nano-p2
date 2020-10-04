@@ -126,14 +126,13 @@ Resources:
 
       ImageId: ami-06358f49b5839867c
       IamInstanceProfile: !Ref ListS3BucketsInstanceProfile
-      KeyName: 
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: t3.medium
       BlockDeviceMappings:
       - DeviceName: "/dev/sdk"
         Ebs:
-          VolumeSize: '8'
+          VolumeSize: '10'
   WebAppGroup:
     Type: AWS::AutoScaling::AutoScalingGroup
     Properties:
