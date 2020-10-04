@@ -126,7 +126,7 @@ Resources:
 
       ImageId: ami-06358f49b5839867c
       IamInstanceProfile: !Ref ListS3BucketsInstanceProfile
-      KeyName: private-server-devops-key
+      KeyName: 
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: t3.medium
